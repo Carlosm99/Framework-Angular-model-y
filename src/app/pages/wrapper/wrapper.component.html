@@ -1,0 +1,75 @@
+<mat-sidenav-container autosize>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dashboard control de transporte</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex ml-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <ul class="navbar-nav  ml-auto navbar-right">        
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <mat-icon mat-list-icon >account_circle</mat-icon>  Carlos Obidio
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Cerrar sesión </a></li>
+            </ul>
+          </li>
+       
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+    <mat-sidenav #sidenav mode="side" opened="true">
+      <mat-nav-list>
+        
+        <mat-list-item>
+          <mat-icon mat-list-icon class="chevron-button sidenav-button" (click)="isExpanded = !isExpanded" [ngClass]="{'rotated': isExpanded}">list</mat-icon>
+        </mat-list-item>
+  
+        <mat-list-item [routerLink]="'dashboard'">
+          <mat-icon mat-list-icon >dashboard</mat-icon>
+          <span *ngIf="isExpanded">Dashboard</span>
+        </mat-list-item>
+         <br>
+                
+        <mat-list-item [routerLink]="'corridas'">
+          <mat-icon mat-list-icon>departure_board</mat-icon>
+          <span *ngIf="isExpanded">Boletin informativo </span>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="'login'">
+            <mat-icon mat-list-icon>directions_bus</mat-icon>
+            <span *ngIf="isExpanded">Bus Line  </span>
+          </mat-list-item>
+  
+        <mat-list-item [routerLink]="'login'">
+          <mat-icon mat-list-icon>people_alt</mat-icon>
+          <span *ngIf="isExpanded">Usuarios </span>
+        </mat-list-item>
+       
+      </mat-nav-list>
+      
+    </mat-sidenav>
+    
+  
+    <div class="content">
+      <mat-toolbar>         
+       
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </div>
+    
+  </mat-sidenav-container>
+ 

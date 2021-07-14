@@ -1,0 +1,83 @@
+<br />
+<div class="body">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col">
+        <div class="p-3">
+          <button type="button" class="btn btn-success">
+            Registrar una nueva corrida
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <button
+            type="button"
+            class="btn btn-success"
+            routerLink="/vercorridas"
+          >
+            Ver todos los registros disponibles
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p>En esta sección se agrega un nuevo registro de una corrida</p>
+    <br />
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Origen</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Origen"
+            formControlName="Destino"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Destino</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Destino"
+            formControlName="Destino"
+          />
+        </div>
+      </div>
+      <br />
+      <div formGroupName="notas" class="form-row">
+        <div class="col">
+          <label for="inputPassword4">Hora_de_partida :</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Hora_de_partida "
+            formControlName="nota1"
+          />
+        </div>
+        <div class="col">
+          <label for="inputPassword4"> hora_de_llegada:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="hora_de_llegada:"
+            formControlName="nota2"
+          />
+        </div>
+        <div class="col">
+          <label for="inputPassword4">costo:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="costo:"
+            formControlName="nota3"
+          />
+        </div>
+      </div>
+      <br />
+
+      <button type="submit" class="btn btn-primary">Confirmar</button>
+    </form>
+  </div>
+</div>
