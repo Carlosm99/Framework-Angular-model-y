@@ -5,29 +5,74 @@
       <div class="col">
         <div class="p-3">
           <button type="button" class="btn btn-success">
-            Registrar una nueva corrida
+            Registra un nuevo Usario
           </button>
         </div>
       </div>
       <div class="col">
         <div class="p-3">
-          <button
-            type="button"
-            class="btn btn-success"
-            routerLink="/veradmin"
-          >
+          <button type="button" class="btn btn-success" routerLink="/veradmin">
             Ver todos los registros disponibles
           </button>
         </div>
       </div>
     </div>
     <br />
-    <p>En esta sección se agrega un nuevo registro </p>
-    <br />
 
-    <!-- aqui van a poner el formulario -->
-    <form></form>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Origen"
+            formControlName=""
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            formControlName="apellido"
+          />
+        </div>
+      </div>
+      <br />
+      <div formGroupName="notas" class="form-row">
+        <div class="col">
+          <label for="inputPassword4">password :</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder=" "
+            formControlName="nota1"
+          />
+        </div>
+        <div class="col">
+          <label for="inputPassword4"> permiso:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            formControlName="nota2"
+          />
+        </div>
+        <div class="col">
+          <label for="inputPassword4">usario:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            formControlName="nota3"
+          />
+        </div>
+      </div>
+      <br />
+
+      <button type="submit" class="btn btn-primary">Confirmar</button>
+    </form>
   </div>
 </div>
-
-

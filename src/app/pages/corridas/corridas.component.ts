@@ -10,6 +10,8 @@ export class CorridasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    
   }
 
 }
