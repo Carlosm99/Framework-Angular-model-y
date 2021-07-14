@@ -49,14 +49,22 @@
           <span *ngIf="isExpanded">Boletin informativo </span>
         </mat-list-item>
 
-        <mat-list-item [routerLink]="'login'">
+        <mat-list-item [routerLink]="'usarios'">
             <mat-icon mat-list-icon>directions_bus</mat-icon>
-            <span *ngIf="isExpanded">Bus Line  </span>
+            <span *ngIf="isExpanded">Usuarios</span>
           </mat-list-item>
   
-        <mat-list-item [routerLink]="'login'">
+        <mat-list-item [routerLink]="'admin'">
           <mat-icon mat-list-icon>people_alt</mat-icon>
-          <span *ngIf="isExpanded">Usuarios </span>
+          <span *ngIf="isExpanded">Admin </span>
+        </mat-list-item>
+        <mat-list-item [routerLink]="'boletos'">
+          <mat-icon mat-list-icon>people_alt</mat-icon>
+          <span *ngIf="isExpanded">Boletos </span>
+        </mat-list-item>
+        <mat-list-item [routerLink]="'busline'">
+          <mat-icon mat-list-icon>people_alt</mat-icon>
+          <span *ngIf="isExpanded">Busline </span>
         </mat-list-item>
        
       </mat-nav-list>

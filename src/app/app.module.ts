@@ -12,6 +12,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { WrapperComponent } from './pages/wrapper/wrapper.component';
 import { CorridasComponent } from './pages/corridas/corridas.component';
 import { VercorridasComponent } from './pages/vercorridas/vercorridas.component';
+import { UsariosComponent } from './pages/usarios/usarios.component';
+import { VerusuariosComponent } from './pages/verusuarios/verusuarios.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { VeradminComponent } from './pages/veradmin/veradmin.component';
+import { BoletosComponent } from './pages/boletos/boletos.component';
+import { VerboletosComponent } from './pages/verboletos/verboletos.component';
+import { BuslineComponent } from './pages/busline/busline.component';
+import { VerbuslineComponent } from './pages/verbusline/verbusline.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +28,15 @@ import { VercorridasComponent } from './pages/vercorridas/vercorridas.component'
     DashboardComponent,
     WrapperComponent,
     CorridasComponent,
-    VercorridasComponent
+    VercorridasComponent,
+    UsariosComponent,
+    VerusuariosComponent,
+    AdminComponent,
+    VeradminComponent,
+    BoletosComponent,
+    VerboletosComponent,
+    BuslineComponent,
+    VerbuslineComponent
   ],
   imports: [
     BrowserModule,
