@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-vercorridas',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VercorridasComponent implements OnInit {
 
-  constructor() { }
+   corridas: any;
+  constructor( private dataServices: DataService) { }
 
   ngOnInit(): void {
+    this.corridas = this.dataServices.getCorridas();
   }
 
 }

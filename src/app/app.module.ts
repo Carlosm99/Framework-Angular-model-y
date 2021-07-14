@@ -20,6 +20,7 @@ import { BoletosComponent } from './pages/boletos/boletos.component';
 import { VerboletosComponent } from './pages/verboletos/verboletos.component';
 import { BuslineComponent } from './pages/busline/busline.component';
 import { VerbuslineComponent } from './pages/verbusline/verbusline.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { VerbuslineComponent } from './pages/verbusline/verbusline.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
     
   ],
   providers: [],
