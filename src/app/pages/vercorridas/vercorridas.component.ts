@@ -8,11 +8,19 @@ import { DataService } from '../../services/data.service';
 })
 export class VercorridasComponent implements OnInit {
 
-   corridas: any;
+  //corridas: any;
+ // data = {};
   constructor( private dataServices: DataService) { }
 
-  ngOnInit(): void {
-    this.corridas = this.dataServices.getCorridas();
-  }
+  ngOnInit() {
+  // this.corridas = this.dataServices.getCorridas();
+  //  this.dataServices.getCorridas()
+  //  .subscribe( corridas => {
+  //    console.log(corridas);
+  //  })
+  // this.dataServices.getCorridas()
+  //       .subscribe(result => this.data = result);
+         
+}
 
 }

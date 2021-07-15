@@ -3,8 +3,8 @@
   <div class="container">
     <div class="row align-items-center justify-content-center" >
      
-        <div *ngFor="let corrida of corridas | async"  >
-          <!-- <img class="card-img-top" src="{{pais.flag}}" alt="Card image cap"> -->
+         <!-- <div *ngFor="let corrida of corridas | async"  >
+          <img class="card-img-top" src="{{pais.flag}}" alt="Card image cap">
          
             <h5>title of card</h5>
             <h6>{{corrida.id_corrida}}</h6>
@@ -21,7 +21,14 @@
            
             
 
-        </div>
+        </div>  -->
+        <ul class="list-group">
+          <li  *ngFor ="let corrida of [1,1,1,1,1,1,1]" class="list-group-item">
+            <h2>corrida.id_corrida</h2>
+            <p>corrida.Destino</p>
+          </li>
+        </ul>
     </div>
   </div>
 </div>
+<!-- *ngFor="let corrida of corridas" -->

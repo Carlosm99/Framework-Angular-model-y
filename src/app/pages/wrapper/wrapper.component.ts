@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class WrapperComponent implements OnInit {
 
-  isExpanded: boolean = true;
+  isExpanded: boolean = false;
 
   constructor(private router: Router) { }
 
